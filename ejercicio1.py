@@ -42,6 +42,7 @@ def multiplicacion_matrices(n,m,m1,matriz1,matriz2):
         for j in range(m1):
             for k in range(m):
                 matriz3[i][j]+=matriz1[i][k]*matriz2[k][j]
+                print(matriz3[i][j])
     return matriz3
 def ingresa_filas_columnas(m):
     n1=int(input("ingrese la cantidad de filas:"))
