@@ -18,4 +18,4 @@ def imprime_matriz(matriz):
 Matriz1=GeneraMatriz(3,3)
 imprime_matriz(Matriz1)
 determinante=numpy.linalg.det(Matriz1)
-print(int(determinante))
+print(round(determinante))
