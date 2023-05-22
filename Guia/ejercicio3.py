@@ -12,7 +12,7 @@ def imprime_matriz(matriz):
     for i in range(3):
         print("[", end=" ")
         for j in range(3):
-            print(int(matriz[i][j]),end=" ")
+            print(round(matriz[i][j]),end=" ")
         print("]")
 #Programa Principal
 Matriz1=GeneraMatriz(3,3)
