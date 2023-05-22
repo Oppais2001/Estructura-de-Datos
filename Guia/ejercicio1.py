@@ -15,7 +15,7 @@ for i in range(5):
     for j in range(5):
         sc1[i]+=matriz1[j][i]
 sc1.sort()
-#print(sc1)
+print(sc1)
 print("matriz1:")
 imprime_matriz(matriz1)
 print(f"valor mas alto de la suma de columnas de la matriz 1 es {sc1[-1]}")
@@ -25,6 +25,6 @@ for i in range(5):
     for j in range(5):
         sf1[i]+=matriz1[i][j]
 sf1.sort()
-#print(sf1)
+print(sf1)
 print(f"valor mas bajo de la suma de filas de la matriz 1 es {sf1[0]}")
 
