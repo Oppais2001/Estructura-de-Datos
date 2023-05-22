@@ -26,6 +26,5 @@ for i in range(5):
         sf1[i]+=matriz1[i][j]
 sf1.sort()
 #print(sf1)
-#print(sf2)
 print(f"valor mas bajo de la suma de filas de la matriz 1 es {sf1[0]}")
 
