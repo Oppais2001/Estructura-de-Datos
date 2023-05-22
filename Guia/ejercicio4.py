@@ -16,7 +16,7 @@ def matrizinversa(matriz,matrizidentidad):
         if matriz[a][0]!=1:
             divisor=matriz[a][0]
             for b in range(n):
-                if matriz[a][b]!=0:
+                if divisor!=0 or divisor!=-0.0:
                     matriz[a][b]/=divisor
                     matrizidentidad[a][b]/=divisor
     # le resta la fila 1 a la fila 2 y a la fila 3
@@ -29,7 +29,7 @@ def matrizinversa(matriz,matrizidentidad):
         if matriz[c][1]!=1:
             divisor=matriz[c][1]
             for d in range(n):
-                if matriz[c][d]!=0:
+                if divisor!=0 or divisor!=-0.0:
                     matriz[c][d]/=divisor
                     matrizidentidad[c][d]/=divisor
     # le resta la fila 2 a la fila 3
@@ -42,7 +42,7 @@ def matrizinversa(matriz,matrizidentidad):
         if matriz[g][2]!=1:
             divisor=matriz[g][2]
             for h in range(n):
-                if matriz[g][h]!=0:
+                if divisor!=0 or divisor!=-0.0:
                     matriz[g][h]/=divisor
                     matrizidentidad[g][h]/=divisor
     #obtenemos el indice de los valores de la columna 3
@@ -99,5 +99,5 @@ matriz2,matrizidentidad=matrizinversa(matriz1,matrizidentidad)
 for i in range(n1):
     for j in range(n1):
         matriz2[i].append(matrizidentidad[i][j])
-print("matriz inversa:")
+print("matriz ampliada inversa:")
 imprimeMatrizAmpliada(n1,2*n1,matriz2)
